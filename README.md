@@ -16,14 +16,19 @@ This project demonstrates how to deploy **Jenkins** on an **EC2 instance** runni
 
 3. **Jenkins Installation:**
    - Installed Jenkins and configured it to run as a service.
-![Alt text](interface jenkins.png)
+
+     
+![Alt text](interface_jenkins.png)
 
 4. **Firewall Configuration:**
    - Configured AWS Security Groups to open port 8080 for Jenkins web access.
 
 5. **Deployment:**
    - Used Jenkins to deploy an application, automating the deployment process.
+
+     
 ![Alt text](Jenkins_Deployed.png)
+
 ## Technologies Used:
 
 - AWS EC2
