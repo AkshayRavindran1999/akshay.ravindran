@@ -7,6 +7,7 @@ This project demonstrates how to deploy **Jenkins** on an **EC2 instance** runni
 1. **EC2 Setup:**
    - Launched an EC2 instance on AWS (Ubuntu).
    - Created an SSH key pair for secure access.
+![Alt text](First Instance created)
 
 2. **Package Updates & Java Installation:**
    - Updated system packages and installed Java to meet Jenkins' requirements.
