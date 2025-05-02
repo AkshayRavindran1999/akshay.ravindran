@@ -1,0 +1,61 @@
+AWS App Deployment using Private subnet– Project Summary
+
+Created a custom VPC with two Availability Zones (AZs).
+In each AZ, created one public and one private subnet.
+Set up NAT Gateways – one per AZ – to allow internet access for instances in private subnets.
+
+🔄 Auto Scaling & EC2 Configuration
+  Enabled Auto Scaling to dynamically scale EC2 instances as needed.
+  Selected appropriate AMI, instance types, key pairs, and security groups.
+  Configured inbound security group rules:
+    SSH access on port 22
+    Application access on TCP port 8000
+  Created a Launch Template to define instance configuration.
+  Created an Auto Scaling Group (ASG) using the launch template.
+  Verified that two EC2 instances were launched across the AZs.
+
+
+🔐 Secure Access Using Bastion Host
+  Deployed a Bastion Host (Jump Server) in a public subnet to securely access EC2 instances in private subnets.
+  Copied the key pair from local machine to the Bastion instance for SSH access:
+
+      scp -i key.pem key.pem ubuntu@<bastion-public-ip>:/home/ubuntu/
+
+🌐 Application Deployment
+  Deployed a simple HTML file to the private EC2 instance.
+
+  Launched a basic Python HTTP server:
+
+        python3 -m http.server 8000
+
+⚖️ Load Balancer Setup
+Created an Application Load Balancer (ALB).
+
+Registered both EC2 instances (from the ASG) as targets.
+
+Configured target group to forward traffic to port 8000.
+
+Verified health checks on port 8000.
+
+Updated the Load Balancer's security group to allow HTTP traffic on port 80.
+
+Successfully tested that the application was accessible via the Load Balancer URL.
+
+✅ Final Testing and Demonstration
+Verified successful load balancing across both instances.
+
+Demonstrated full deployment: secure access, autoscaling, load balancing, and application availability.
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
