@@ -63,7 +63,7 @@ Confirmed that the load balancing was functioning, distributing traffic evenly a
 
 Demonstrated the full deployment, showcasing secure access, auto-scaling, load balancing, and the availability of the web application.
 
-![AutoScalingGroup](VPCDemoProject/image/AutoScalingGroup.png)  
+![AutoScalingGroup](VPC Demo Project/image/AutoScalingGroup.png)  
 ![CopiedKeystoPublic](VPC%20Demo%20Project/image/CopiedKeystoPublic.png)  
 ![FinalOutput](VPC%20Demo%20Project/image/FinalOutput.png)  
 ![Launchtemplate](VPC%20Demo%20Project/image/Launchtemplate.png)  
