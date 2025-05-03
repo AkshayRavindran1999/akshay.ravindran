@@ -62,10 +62,9 @@ Verified that Auto Scaling worked as expected by dynamically adjusting the numbe
 Confirmed that the load balancing was functioning, distributing traffic evenly across both instances.
 
 Demonstrated the full deployment, showcasing secure access, auto-scaling, load balancing, and the availability of the web application.
-VPC Demo Project/image/AutoScalingGroup.png
-![AutoScalingGroup](VPC Demo Project/image/AutoScalingGroup.png)
-![AutoScalingGroup](VPC%20Demo%20Project/image/AutoScalingGroup.png)
-![CopiedKeystoPublic](VPC%20Demo%20Project/image/CopiedKeystoPublic.png)  
+![Jenkins Deployed](images/Jenkins_Deployed.png)
+![AutoScalingGroup](image/)
+![CopiedKeystoPublic](image/CopiedKeystoPublic.png)  
 ![FinalOutput](VPC%20Demo%20Project/image/FinalOutput.png)  
 ![Launchtemplate](VPC%20Demo%20Project/image/Launchtemplate.png)  
 ![LoadBalancer](VPC%20Demo%20Project/image/LoadBalancer.png)  
