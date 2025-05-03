@@ -1,5 +1,5 @@
 AWS 2 Tier App Deployment using Private Subnet
-
+![2Tier](image/2Tier.png) 
 Objective: To deploy a highly available, scalable, and secure web application on AWS, utilizing private subnets, auto-scaling, and load balancing.
 
 1. VPC and Subnet Configuration
