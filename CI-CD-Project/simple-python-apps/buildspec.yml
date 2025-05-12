@@ -12,11 +12,11 @@ phases:
   pre_build:
     commands:
       - echo "Installing dependencies..."
-      - pip install -r CI-Project/simple-python-apps/requirements.txt 
+      - pip install -r CI-CD-Project/simple-python-apps/requirements.txt 
   build:
     commands:
       - echo "Running tests..."
-      - cd CI-Project/simple-python-apps/
+      - cd CI-CD-Project/simple-python-apps/
       - echo "Building Docker image..."
       - echo "$DOCKER_REGISTRY_PASSWORD" | docker login -u "$DOCKER_REGISTRY_USERNAME" --password-stdin "$DOCKER_REGISTRY_URL"
       - docker build -t "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/simple-python-flask-app:latest" .
