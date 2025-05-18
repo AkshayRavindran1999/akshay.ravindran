@@ -12,3 +12,4 @@ A collection of DevOps-related projects.
 - VPC Demo Project
 - multi-stage-multi-agent
 - scripts
+- Host Website in S3 - cloudfront
